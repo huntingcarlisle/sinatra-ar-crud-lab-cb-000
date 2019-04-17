@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/posts/:id' do
-    erb :show
+    redirect 'posts/:id'
   end
  
   
