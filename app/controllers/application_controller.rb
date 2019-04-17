@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/posts' do
-    @post = 
+    Post.new(params[:post])
     @posts = Post.all  
   end
   
