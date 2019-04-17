@@ -41,6 +41,10 @@ class ApplicationController < Sinatra::Base
     post.update(name: params[:name], content: params[:content])
     redirect "posts/#{post.id}"
   end
+  
+  delete '/articles/:id' do
+    
+  end
  
   
 end
