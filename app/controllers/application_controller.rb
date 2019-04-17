@@ -12,11 +12,11 @@ class ApplicationController < Sinatra::Base
 
   end
   
-  get '/articles/new' do
+  get '/posts/new' do
     erb :new
   end
   
-  post '/articles' do
+  post '/posts' do
     erb :index
   end
   
